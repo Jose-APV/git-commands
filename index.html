@@ -34,25 +34,25 @@
     </p>
     <span>These are the commands you have to do</span>
     <ol>
-      <li><code>git branch [branch-name]</code></li> <span>*It is recommended to make your branch name like this: [nameinitials_feature] ex: japv_shoppingcart</span>
-      <li><code>git checkout [branch-name]</code></li> <span>*this switches you from the "main" branch onto the branch you just made!</span>
+      <li><code>git branch [branch-name]</code> *It is recommended to make your branch name like this: [nameinitials_feature] ex: japv_shoppingcart</li> 
+      <li><code>git checkout [branch-name]</code> *This switches you from the "main" branch onto the branch you just made!</li> 
       <ol>
         <p>Alternatively... you can do those 2 steps in one line like this:</p>
-        <li><code>git checkout -b [branch-name]</code></li> <span>*The -b means "git, please create a new branch"</span>
+        <li><code>git checkout -b [branch-name]</code> *The <code>-b</code> means "git, please create a new branch"</li>
       </ol>
-      <li><code>git fetch</code>*This just gets the most recent version of the code, similar to pull but it won't make changes to your files just yet</li>
-      <li><code>git push -u origin [branch-name]</code>*This pushes the branch onto Github so your teammates can also join your branch if you need to work together</li>
+      <li><code>git fetch</code> *This just gets the most recent version of the code, similar to pull but it won't make changes to your files just yet</li>
+      <li><code>git push -u origin [branch-name]</code> *This pushes the branch onto Github so your teammates can also join your branch if you need to work together</li>
       <p>You should add and commit your code often! This will save your code on github just in case anything bad happens! If something happens to the files your working on, you can always go back to them on your github branch :D </p>
       <li><code>git add .</code></li>
       <li><code>git commit -m "description here"</code></li>
       <h5>Once you're finished with your feature/task and you're ready to merge:</h5>
-      <li><code>git fetch</code>*Making sure your main repo is the most recent</li>
+      <li><code>git fetch</code> *Making sure your main repo is the most recent</li>
       <li><code>git checkout main</code></li>
       <li><code>git merge [branch-name]</code>*Merges your branch onto main</li>
-      <li><code>git push origin main</code>Pushes your version of the code(merged version) onto github</li>
+      <li><code>git push origin main</code> *Pushes your version of the code(merged version) onto github</li>
       <h5>Now, we should delete your branches that exist remotely and also locally in your computer</h5>
-      <li><code>git push origin :[branch-name]</code>* The semi-colon is important and tells git to "delete". (This deletes branch remotely)</li>
-      <li><code>git branch -D [branch-name]</code>* Deletes the branch from your local repository</li>
+      <li><code>git push origin :[branch-name]</code> *The semi-colon is important and tells git to "delete". (This deletes branch remotely)</li>
+      <li><code>git branch -D [branch-name]</code> *Deletes the branch from your local repository</li>
     </ol>
   </div>
     <h2 class="center">Some extra notes:</h2>
@@ -60,9 +60,9 @@
       <p>If 2 or more people are working with similar files, it’s important to switch to their branch instead of creating your own branch:
       </p>
       <ol>
-        <li><code>git fetch</code>*Gets any branches that may exist in the Github</li>
-        <li><code>git branch -a</code>*To see all branches, including your branches and remote branches</li>
-        <li><code>git switch [desired-remote-branch-name]</code>* Switches to the branch X person is working on</li>
+        <li><code>git fetch</code> *Gets any branches that may exist in the Github</li>
+        <li><code>git branch -a</code> *To see all branches, including your branches and remote branches</li>
+        <li><code>git switch [desired-remote-branch-name]</code> *Switches to the branch X person is working on</li>
       </ol>
     </div>
 
@@ -72,15 +72,15 @@
     <div class="instructions">
       <p>
         <ul>
-          <li> Pull on git(means getting the most recent version from github and changes your files to recent)</li>
-          <li> Fetch on git(means getting the most recent version but it doesn’t change your files until u merge)</li>
-          <li> Forking (means grabbing someone else’s REPO on github but it’s saved under you. So when u push, it will save under the repo you own, instead of the person you got it from)</li>
-          <li> Branch (Alternate repository so you can create new features without affecting the working code)</li>
-          <li>  Origin - Refers to github remote or “original” repo</li>
-          <li> Main - where the working code goes.</li>
-          <li> The command -a means “all”</li>
-          <li> The command -b means “create a new branch” ex: git checkout -b [branch-name]</li>
-          <li> The command -u means “upstream branch” and it allows git to track the branch you created and links it to a branch on github. So now you can do git pull when working on a branch without specifying what branch you want to pull from.</li>
+          <li> <b>Pull</b> on git(means getting the most recent version from github and changes your files to recent)</li>
+          <li> <b>Fetch</b> on git(means getting the most recent version but it doesn’t change your files until u merge)</li>
+          <li> <b>Forking</b> (means grabbing someone else’s REPO on github but it’s saved under you. So when u push, it will save under the repo you own, instead of the person you got it from)</li>
+          <li> <b>Branch</b> (Alternate repository so you can create new features without affecting the working code)</li>
+          <li> <b>Origin</b> - Refers to github remote or “original” repo</li>
+          <li> <b>Main</b> - where the working code goes.</li>
+          <li> The command <code>-a</code> means “all”</li>
+          <li> The command <code>-b</code> means “create a new branch” ex: git checkout -b [branch-name]</li>
+          <li> The command <code>-u</code> means “upstream branch” and it allows git to track the branch you created and links it to a branch on github. So now you can do git pull when working on a branch without specifying what branch you want to pull from.</li>
         </ul>
       </p>
     </div>

@@ -20,20 +20,27 @@
 
 
     <h2 class="center">Basic Git Commands</h2>
-    <div class="instructions">
-      <p style="font-weight: bold;">In order to push something to Github, your code will have to go through 3 stages<p>
-      <ol>
-        <li>Adding your new/updated files into the "staging" area:</li>
-        <code>git add . </code><span>(Which means add the current directory to the staging area)</span>
-        <div>OR alternatively, if you want to only add one file to github, you can just add that specific file</div>
-        <code>git add HelloWorld.txt</code>
-       
-        <li>Add your "staged" files include a small description of what feature you are pushing to commit your changes:</li>
-        <code>git commit -m "Add commit message here"</code>
-        <li>Finally, you upload your commited work onto github:</li>
-        <code>git push origin main</code>
-      </ol>
-    </div>
+    <div class="container">
+      <div class="instructions">
+        <p style="font-weight: bold;">In order to push something to Github, your code will have to go through 3 stages<p>
+        <ol>
+          <li>Adding your new/updated files into the "staging" area:</li>
+          <code>git add . </code><span>(Which means add the current directory to the staging area)</span>
+          <div>OR alternatively, if you want to only add one file to github, you can just add that specific file</div>
+          <code>git add HelloWorld.txt</code>
+        
+          <li>Add your "staged" files include a small description of what feature you are pushing to commit your changes:</li>
+          <code>git commit -m "Add commit message here"</code>
+          <li>Finally, you upload your commited work onto github:</li>
+          <code>git push origin main</code>
+        </ol>
+      </div>
+      <div class="center">
+        <div class="info">
+          <p><strong>Note:</strong><br>You can do <code>git pull</code> to get the most recent version of the Github repo. <br> Make sure to always update your codebase before coding away :D</p>
+        </div>
+      </div>
+  </div>
     <div>
       <hr>
     <h2 class="center">How to use Git when working on teams?</h2>
@@ -47,10 +54,13 @@
     <ol>
       <li><code>git branch [branch-name]</code> *It is recommended to make your branch name like this: [nameinitials_feature] ex: japv_shoppingcart</li> 
       <li><code>git checkout [branch-name]</code> *This switches you from the "main" branch onto the branch you just made!</li> 
-      <ol>
-        <p>Alternatively... you can do those 2 steps in one line like this:</p>
-        <li><code>git checkout -b [branch-name]</code> *The <code>-b</code> means "git, please create a new branch"</li>
-      </ol>
+      <div class="info code">
+        <p><strong>Alternatively... you can do those 2 steps in one line like this: <br></strong><br>
+                    
+            1.) <code>git checkout -b [branch-name]</code> *The <code>-b</code> means "git, please create a new branch"
+          </p>
+      </div>
+      
       <li><code>git fetch</code> *This just gets the most recent version of the code, similar to pull but it won't make changes to your files just yet</li>
       <li><code>git push -u origin [branch-name]</code> *This pushes the branch onto Github so your teammates can also join your branch if you need to work together</li>
       <p>You should add and commit your code often! This will save your code on github just in case anything bad happens! If something happens to the files your working on, you can always go back to them on your github branch :D </p>

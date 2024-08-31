@@ -10,3 +10,15 @@ body {
 .instructions {
     padding: 10px;
 }
+.navbar {
+    padding: 0px;
+    
+}
+.logo {
+    display: block;
+    margin-left: 5px;
+    padding-bottom: 8px;
+}
+.nav-item{
+    padding: 4px;
+}
